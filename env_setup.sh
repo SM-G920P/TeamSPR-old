@@ -75,9 +75,8 @@ export USER=`whoami`;
 export TMPFILE=`mktemp -t`;
 
 
-# system compiler
-export CROSS_COMPILE=/home/buildserver/android/toolchains/aarch64-linux-android-4.9-kernel/bin/aarch64-linux-gnu-
-
+# system compiler : UBERTC 5.3.1 20160201 https://bitbucket.org/UBERTC/aarch64-linux-android-5.3-kernel
+export CROSS_COMPILE=/home/buildserver/android/toolchains/UBERTC-aarch64-linux-android-5.3/bin/aarch64-linux-android-
 
 # CPU Core
 export NUMBEROFCPUS=`grep 'processor' /proc/cpuinfo | wc -l`;
