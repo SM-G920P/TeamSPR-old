@@ -13,14 +13,7 @@ cat << CTAG
 	}},
 	{ SPane:{
 		title:"Kernel Thread",
-		description:"<a href='http://forum.xda-developers.com/note5/orig-development/kernel-skyhigh-tw-6-0-1-kernel-t3321646'>XDA</a>"
-	}},
-	{ SSpacer:{
-		height:1
-	}},
-	{ SPane:{
-		title:"Special Features",
-		description:"Work-In-Progress......."
+		description:"<a href='http://forum.xda-developers.com/s6-edge-plus/orig-development/kernel-skyhigh-mm-6-0-1-kernel-t3327816'>XDA</a>"
 	}},
 	{ SSpacer:{
 		height:1
@@ -51,6 +44,17 @@ cat << CTAG
 		height:1
 	}},
 	{ SPane:{
+		title:"ASV Summary",
+		description:"Values: from 0 (Lowest) to 15 (Highest). The higher the ASV, the higher frequencies your device can run and lower voltages"
+	}},
+	{ SLiveLabel:{
+		refresh:10000,
+		action:"show asv"
+	}},
+	{ SSpacer:{
+		height:1
+	}},
+	{ SPane:{
 		title:"Kernel Version"
 	}},
 	{ SLiveLabel:{
@@ -59,17 +63,6 @@ cat << CTAG
 	}},
 	{ SSpacer:{
 		height:1
-	}},
-	{ SPane:{
-		title:"ASV Summary",
-		description:"Values: from 0 (Lowest) to 15 (Highest). The higher the ASV, the higher frequencies your device can run and lower voltages"
-	}},
-	{ SSpacer:{
-		height:1
-	}},
-	{ SLiveLabel:{
-		refresh:10000,
-		action:"show asv"
 	}},
 	{ SPane:{
 		title:"Build"
